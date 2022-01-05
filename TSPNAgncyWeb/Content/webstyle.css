@@ -1,0 +1,798 @@
+﻿body
+{
+    margin-top: 0px;
+    background-color: #f4f4f4;
+    font-family: Arial;
+    font-size: 12px;
+}
+.rightbody a
+{
+    color: #000000;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: underline;
+}
+embed{ z-index:1 !important}
+.rightbody a:hover
+{
+    color: #590033;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+button, input[type="button"], input[type="submit"]
+{
+    width: 100px;
+    height: 26px;
+    padding: 0px 0 0;
+    margin: 0;
+    border: 0;
+    background: transparent url(../Images/button.png) no-repeat center top;
+    overflow: hidden;
+    cursor: pointer; /* hand-shaped cursor */
+    cursor: hand; /* for IE 5.x */
+    font-family: Arial;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+button:hover, input[type="button"]:hover, input[type="submit"]:hover
+{
+    background: transparent url(../Images/button2.png) no-repeat center top;
+}
+
+/* Styles for left navigation pane
+-----------------------------------------------------------*/
+.clear
+{
+    line-height: 0px;
+    height: 0px;
+    clear: both;
+    font-size: 0px;
+    overflow: hidden;
+}
+.clearfix:after
+{
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+    content: ".";
+}
+.clearfix
+{
+    zoom: 1;
+    display: block;
+}
+* HTML .clearfix
+{
+    overflow: hidden;
+}
+
+.nav
+{
+    margin: 0;
+    padding: 40;
+    float: left;
+    width: 100%; /* border:1px solid #42432d;     border-width:1px 0;*/
+}
+
+.LeftPaneHLink
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 12px !important; /* color: #034af3;*/
+    padding-left: 5px; /*height:30px;*/
+}
+LeftPaneHLink a
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF !important;
+    text-decoration: underline;
+}
+LeftPaneHLink a:hover
+{
+    color: #FFFFFF;
+}
+
+/* Styles for Top navigation pane
+-----------------------------------------------------------*/
+.TopPaneHLink
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 12px; /*color: #034af3;*/
+    padding-left: 5px;
+    height: 30px;
+}
+.TopPaneHLink a
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #0c2a63;
+    text-decoration: underline;
+    padding: 10px;
+}
+.TopPaneHLink a:hover
+{
+    color: Maroon;
+}
+.TopPaneHLink a:selected, a:visited
+{
+    color: Orange;
+}
+.TopPaneHLink td
+{
+    border-right: solid 1px #0c2a63;
+}
+.page
+{
+    width: 960px;
+    height: 80%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Arial;
+    color: #484848;
+    background-color: captiontext ;/*#f4f4f4;*/ 
+    color: #000000;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.DataTable table
+{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+.DataTable td, tr
+{
+    border: solid 1px black;
+}
+.DataTable th
+{
+    background-color: Blue;
+}
+h2, h3
+{
+    font-size: 16px;
+}
+.ButtonBar p
+{
+    border: solid 1px black;
+    float: left;
+}
+textarea
+{
+    min-height: 75px;
+}
+
+input[type="text"], input[type="password"]
+{
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 100px;
+}
+.error
+{
+    color: Red;
+}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label
+{
+    font-family: arial !important;
+    text-align: left;
+    font-size: 12px !important;
+}
+
+.display-field, .editor-field
+{
+    font-family: arial;
+    text-align: left;
+}
+
+/* Styles for print forms
+-----------------------------------------------------------*/
+.MainHadingWithBold
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: bold;
+}
+.MainHadingWithBoldAndBorder
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: solid 2px black;
+}
+.MainHading
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: normal;
+}
+.TextWithUnderLine
+{
+    text-decoration: underline;
+}
+.Fields
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family:Arial;
+    font-size: 12px;
+    text-align: left;
+    height: 15px;
+    vertical-align: top;
+}
+.FieldsWithBold
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+.Notes
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Arial;
+    font-size: 12px;
+}
+.NotesWithBold
+{
+    /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+.Border
+{
+    border-bottom: solid 2px black;
+    font-family: Arial;
+}
+.FieldBorder
+{
+    border-bottom: solid 1px black;
+    font-family: Arial;
+}
+.DashedBorder
+{
+    border-bottom: dashed 1px black;
+    font-family: Arial;
+}
+.printpage
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal; /*font-family: 'Lucida Sans Unicode', Verdana, Arial, Sans-serif;*/
+    color: Black;
+}
+
+.topmenu
+{
+    padding: 0px;
+    float: left;
+    height: 44px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+#button
+{
+    float: left;
+    padding: 0;
+}
+
+#button li
+{
+    display: inline;
+}
+#button li a
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    padding: 10px 20px 10px 20px;
+    background-color: #590033;
+    color: #fff;
+}
+a.menuitemactive
+{
+    background-color: #9f1f63 !important;
+}
+#button li a:hover
+{
+    background-color: #9f1f63;
+    margin-top: -2px;
+    padding-bottom: 12px;
+}
+#button li div span
+{
+    padding: 10px 20px 10px 35px;
+    background-color: #590033;
+    background-image: url(../Images/welcome.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    float: right;
+}
+#button li div
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    background-color: #590033;
+    color: #fff;
+    
+}
+
+
+.lnavCol
+{
+    width: 160px;
+    float: left;
+}
+.lnavCol .lnavHeader
+{
+    width: 150px;
+    background-color: #9f1f63;
+    color: White;
+    border: 1px solid #590033;
+    height: 37px;
+    overflow: hidden;
+    padding: 0px 0px 0px 10px;
+}
+.lnavCol .lnavBody
+{
+    padding-bottom: 5px;
+    padding-left: 0px;
+    width: 160px;
+    padding-right: 0px;
+    border: 1px solid #dbdbdb;
+    padding-top: 0px;
+    background-color: #ffffff;
+}
+.lnavCol .lnavFooter
+{
+    width: 160px;
+    height: 0px;
+}
+.lnavCol .lnavCopy
+{
+    width: 160px;
+}
+.lnavCol .lnavHeader H2
+{
+}
+UL.grey-arrow-list
+{
+    list-style-type: none;
+    list-style-image: none;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+UL.grey-arrow-list LI
+{
+    border-bottom: #ededed 1px solid;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 0px;
+    background: url(../Images/my_arrow.gif) #fff no-repeat 16px 11px;
+    margin-right: 1px;
+    padding-top: 6px;
+}
+UL.grey-arrow-list LI.heading
+{
+    padding-left: 10px;
+    font-weight: bold;
+    background: #fff !important;
+    margin-right: 1px;
+    padding-top: 6px;
+}
+
+UL.grey-arrow-list LI A
+{
+    color: #525252;
+    text-decoration: none;
+}
+UL.grey-arrow-list LI a.current
+{
+    color: #810040;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+UL.grey-arrow-list LI A:hover
+{
+    color: #810040;
+    text-decoration: underline;
+}
+.mainbody
+{
+    padding: 0px 0px 0px 0px;
+}
+.leftbody
+{
+    padding: 0px;
+    width: 162px;
+}
+.gap10
+{
+    width: 10px;
+}
+.rightbody
+{
+    padding: 0px;
+    border: 1px solid #dbdbdb;
+    background-color:#ffffff;
+}
+.contentarea
+{
+    background: #FFFFFF;
+    padding: 0px 10px 10px 10px;
+}
+.grid
+{
+}
+.grid tr th
+{
+    background-color: #f4f4f4;
+    border: 1px solid #dbdbdb;
+    padding: 6px;
+}
+.grid tr td
+{
+    border: 1px solid #dbdbdb;
+    padding: 4px 6px 4px 6px;
+}
+
+.grid a
+{
+   padding:0px !important;
+}
+.txtsize
+{
+    float: right;
+    background: url(../Images/topcurve.png) #fff no-repeat;
+    padding: 1px;
+    color: White !important;
+    margin-top: -5px;
+    margin-right: -5px;
+    padding-bottom: 5px;
+}
+.txtsize span
+{
+    margin-left: 20px;
+}
+.txtsize a
+{
+    color: White !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+.txtsize a:hover
+{
+    color: White !important;
+    text-decoration: underline;
+}
+.tdtopmenu
+{
+}
+#tabs-1
+{
+    height: 500px;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border-left: 1px solid #d4d4d4 !important;
+    border-right: 1px solid #d4d4d4 !important;
+    
+    padding-right:12px;
+}
+#tabs-2
+{
+    height: 690px;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border-left: 1px solid #d4d4d4 !important;
+    border-right: 1px solid #d4d4d4 !important;
+    
+    padding-right:12px;
+}
+#tabs-3
+{
+    height: 500px;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border-left: 1px solid #d4d4d4 !important;
+    border-right: 1px solid #d4d4d4 !important;
+   
+    padding-right:12px;
+}
+#tabs-4
+{
+    height: 500px;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border-left: 1px solid #d4d4d4 !important;
+    border-right: 1px solid #d4d4d4 !important;
+    padding-right:12px;
+    
+}
+.logondiv
+{
+    background: transparent url(../Images/Login_bg.png) no-repeat center top; width:313px; height:366px;
+}
+.logondivinr{
+    padding:50px 30px 0px 30px 
+}
+
+.logondivinr a
+{
+    color: #000000;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.logondivinr a:hover
+{
+    color: #590033;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+.lbox
+{
+    padding:10px;
+    background-color:#FFFFFF;
+    border:1px solid #d4d4d4;
+    height:346px;
+}
+
+.lboxLogon
+{
+    padding:10px;
+    background-color:#FFFFFF;
+    border:1px solid #d4d4d4;
+    height:346px;
+    font-family: Comic Sans MS;
+    font-size: large;
+}
+
+legend{ font-weight:bold; padding-left:6px; padding-right:6px; }
+a.openopt
+{
+     text-decoration:none; 
+    background: transparent url(../Images/droparrow.png) no-repeat right top;
+    padding:5px 40px 5px 10px;
+    border: 1px solid #8b8b8b;
+}
+
+a.openopt:hover
+{
+    text-decoration:none;
+    padding:5px 40px 5px 10px;
+}
+#divLinks
+{
+    border: 1px solid #8b8b8b;
+    padding:5px 5px 5px 5px;
+    width:150px;
+     margin:0px;
+}
+
+
+
+#container {
+    width:120px;
+    margin:11px auto 0 auto;
+    position: relative;
+    top: -12px;
+    left: 0px;
+    height: 24px;
+}
+
+#container a:link, #container a:visited {
+    color:#000000;
+    text-decoration:none;
+}
+#container a:hover {
+    text-decoration:underline;
+}
+#container a img {
+    border-width:0;
+}
+#container #topnav {
+    padding:0px 0px 12px;
+    font-size:11px;
+    line-height:23px;
+    text-align:right;
+}
+#container #topnav a.signin {
+    background:#ffffff;
+    border:1px solid #8b8b8b;
+    text-decoration:none;
+    font-weight:bold;
+    color:#000000;
+    background:transparent url("../Images/droparrow.png") no-repeat right top;
+    padding:4px 16px 6px 6px;
+}
+#container #topnav a.signin:hover {
+    background:#ffffff;
+    background:transparent url("../Images/droparrow.png") no-repeat right top;
+    padding:4px 16px 6px 6px;
+}
+#container #topnav a.signin, #container #topnav a.signin:hover {
+    *background-position:0 3px!important;
+}
+
+#container a.signin {
+    position:relative;
+    margin-left:3px;
+}
+#container a.signin span {
+    padding:4px 16px 6px 6px;
+}
+#container #topnav a.menu-open {
+    background:#ffffff!important;
+    color:#000000 !important;
+    outline:none;
+}
+#container #small_signup {
+    display:inline;
+    float:none;
+    line-height:23px;
+    margin:25px 0 0;
+    width:170px;
+}
+#container a.signin.menu-open {
+     padding:4px 18px 6px 6px;
+    color:#000000;
+}
+
+#signin_menu {
+    display:none;
+    background-color:#FFFFFF;
+    position:absolute;
+    width:150px;
+    z-index:100;
+    border-left:1px solid #8b8b8b;
+    border-right:1px solid #8b8b8b;
+    border-bottom:1px solid #8b8b8b;
+    text-align:left;
+    padding:12px;
+    top: 24.5px; 
+    right: 0px; 
+    margin-top:0px;
+    margin-right: 0px;
+    *margin-right: -1px;
+    color:#000000;
+    font-size:11px;
+}
+ul.ulbtns { list-style-type:none;   
+            margin:0px;
+        list-style-image: none; 
+        margin: 0;
+        padding: 0;}
+        
+.ulbtns li{ list-style-type:none; float:left; width:150px}
+
+.links, .link
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    width: 100px;
+    height: 24px;   
+    margin: 0;
+    background: transparent url(../Images/button.png) no-repeat center top;
+    overflow: hidden;
+    cursor: pointer; /* hand-shaped cursor */
+    cursor: hand; /* for IE 5.x */
+    font-family: Arial !important;
+    font-size: 12px !important;
+    color: #FFFFFF !important;
+    font-weight: bold; 
+    text-align:center; 
+    padding-top:5px !important; 
+    padding-bottom:0px !important;
+    text-decoration:none !important;
+}
+.links:hover, .link:hover
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    width: 100px;
+    height: 24px;   
+    margin: 0;
+    background: transparent url(../Images/button2.png) no-repeat center top;
+    overflow: hidden;
+    cursor: pointer; /* hand-shaped cursor */
+    cursor: hand; /* for IE 5.x */
+    font-family: Arial !important;
+    font-size: 12px !important;
+    color: #FFFFFF !important;
+    font-weight: bold; 
+    text-align:center; 
+    padding-top:5px !important; 
+    padding-bottom:0px !important;
+    text-decoration:none;
+}
+
+
+
+.tcafleft
+{
+    width:450px;
+    float:left !important;
+}
+.tcafright
+{
+    width:350px;
+    float:right !important;
+}
+.tcafmain
+{
+    width:1000px
+}
+.pager
+{
+    padding : 10px 0px 20px 0px;
+}
+
+.selected-page
+{
+    padding : 8px;
+}

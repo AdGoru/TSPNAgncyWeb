@@ -1,0 +1,25 @@
+﻿@using com.rti.tailspinnew.web.Helpers   
+
+@model com.rti.tailspinnew.Models.WcfAppService.localCampListItem
+      
+<table class="body" align="left">
+    <tr>
+    <td>
+    <div class="editor-label"> 
+    Camp Name: @Html.DisplayFor(m1 => Model.Title)</div></td>
+    
+    <td>
+  @* @Html.ActionLink("Select Camp", "CampsFromNewCAF", "CAFController")*@
+  <div class="editor-label"> 
+     @Html.DialogFormLink("Select", Url.Action("ListOfCamps"), "Select Camp", "CampContainer", Url.Action("SelectedCamp"))
+     </div>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2">
+    <div class="editor-field"> 
+    Camp Address: @Html.DisplayFor(m1 => Model.Address)
+     </div> 
+    </td>
+    </tr>
+    </table>

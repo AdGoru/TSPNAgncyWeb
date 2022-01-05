@@ -1,0 +1,279 @@
+/* CSS Document */
+ 
+
+.menuhyperlink
+{
+    color:#003366;
+}
+.menu_black
+{
+	background-color:#292A2E;
+	font:12px Verdana;
+	color:#ffffff;
+	text-align:center;
+	line-height:20px;
+	}
+
+.foot
+{
+	background-color:#9FACCD;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	font-size:11px;
+	text-align:center;
+	line-height:20px;
+	}
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #000000;
+	text-align:justify;
+	padding-left:5px;
+	padding-right:10px;
+}
+.text1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #000000;
+	text-align:justify;
+	padding-left:5px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+.bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	border-right:2px solid #996600;
+	padding:0px 10px 0px 10px;
+	text-decoration: blink;
+	text-align: center;
+}
+.boldlast {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #025EA5;
+	border-bottom:1px;
+	border-bottom-color:#000033;
+	 
+	
+}
+.small_text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.blue {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #0000CC;
+	text-align:right;
+	line-height:20px;
+}
+.line{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	line-height:0px;
+}
+#li
+{
+	font-family:verdana;
+	font-size: 12px;
+	
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.link {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration:none;
+}
+.link:hover {
+font-family:Verdana;
+font-size:12px;
+color:#cccccc;
+}
+.gray
+{
+	background-color:#C3C1C3;
+	font:12px Verdana;
+	font-weight: bold;
+	color:#000000;
+	text-align:left;
+	line-height:20px;
+	padding-left:5px;
+}
+.bg_horizontal
+{
+background-image: url(images/hori.gif);
+width:2px;
+background-repeat:repeat-y;
+}
+
+.bg_vertical
+{
+background-image: url(images/vertical.gif);
+height:1px;
+background-repeat:repeat-x;
+}
+.graytext
+{
+font-family:Verdana;
+font-size:11px;
+color:#333333;
+padding-left:5px;
+line-height:20px;
+}
+.textboxtd
+{
+width:300px;
+height:10px;
+padding-left:5px;
+}
+.button
+{
+width:100px;
+height:25px;
+}
+.borderleft
+{
+background-image:url(images/left.gif);
+width:5px;
+background-repeat:repeat-y;
+}
+
+.borderright
+{
+background-image:url(images/right.gif);
+width:2px;
+background-repeat:repeat-y;
+}
+.pad {
+
+	padding-left:15px;
+	padding-top:10px;
+	}
+.pad2 {
+
+	padding-left:15px;
+	
+	}
+	.drop
+{
+width:100px;
+height:20px;
+}
+.banner
+{
+background-image:url(images/banner.jpg);
+width:800px;
+height:136px;
+}
+.homelink {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	text-decoration:none;
+}
+.homelink:hover {
+font-family:Verdana;
+font-size:11px;
+color: #000099;
+}
+.lhight
+{
+line-height:1px;
+}
+.body 
+{
+font-family: Verdana;
+font-size: 11px;
+font-weight:normal
+}
+.textbox
+{
+border:1px solid #cccccc;
+width:80px;
+height:17px;
+}
+
+.textboxbig
+{
+border:1px solid #517FAA;
+width:210px;
+height:17px;
+font-family: Garamond;
+font-size: 15px;
+
+font-weight:normal;
+}
+.textboxfont
+{
+font-family: Garamond;
+font-size: 15px;
+font-weight:normal;
+border:1px solid #517FAA;
+}
+.dropbox
+{
+border:1px solid #cccccc;
+width:150px;
+height:20px;
+}
+.mboxbig
+{
+border:1px solid #517FAA;
+width:210px;
+height:100px;
+}
+.textboxsmall
+{
+border:1px solid #517FAA;
+width:120px;
+height:17px;
+font-family: Verdana;
+}
+.hedding
+{
+font-family:Verdana;
+font-size:12px;
+font-weight:bold;
+color:#003399;
+}
+	
+	
+.DatatdLeftnTop
+{
+    text-align:left;
+    vertical-align:top;
+}
+.DatatdLeftnMiddle
+{
+    text-align:left;
+    vertical-align:middle;
+}
+.DatatdRightnTop
+{
+    text-align:right;
+    vertical-align:top;
+}
+.DatatdRightnMiddle
+ {
+    text-align:right;
+    vertical-align:middle;
+}
+TABLE.photoBoxWithSpace {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE:smaller ; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;}
+	
+.LeftPaneHLink
+{
+    font-weight:bold;
+    font-family:Verdana;
+    font-size:12px;
+    color: #034af3;
+    padding-left:5px;
+    height:30px;
+}
