@@ -21,6 +21,7 @@
     CAFList
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
 <%using (Html.BeginForm("CAFList", "CAF", FormMethod.Post, new { enctype = "multipart/form-data" }))
       {%>
     <table>

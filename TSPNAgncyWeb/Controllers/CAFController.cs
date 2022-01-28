@@ -53,10 +53,10 @@ namespace com.rti.tailspinnew.web
 			{
 				str[3] = base.Request.Form["AttachmentType4"].ToString();
 			}
-			if (base.Request.Form["AttachmentType5"] != null)
-			{
-				str[4] = base.Request.Form["AttachmentType5"].ToString();
-			}
+			//if (base.Request.Form["AttachmentType5"] != null)
+			//{
+			//	str[4] = base.Request.Form["AttachmentType5"].ToString();
+			//}
 			for (int i = 0; i < base.Request.Files.Count; i++)
 			{
 				if (base.Request.Files[i].ContentLength > 0 && base.Request.Files[i].ContentType.ToLower().Contains("pdf"))
@@ -73,10 +73,26 @@ namespace com.rti.tailspinnew.web
 			return base.RedirectToAction("TCAF", "CAF", new { Id = Id });
 		}
 
-		public ViewResult CAFList()
+		public ViewResult CAFList(string id)
 		{
 			List<localCAFListItem> localCAFListItems = new List<localCAFListItem>();
 			localCAFListItems = WebSessionManager.getCAFList((int)base.Session["usertoken"], (int)base.Session["agentAppId"], (int)base.Session["agencyAppId"]);
+			if (!string.IsNullOrEmpty(id))
+			{
+				if (id == "Child")
+				{
+					localCAFListItems = localCAFListItems.OrderBy(x => x.ChildName).ToList();
+				}
+				if (id == "Camp")
+				{
+					localCAFListItems = localCAFListItems.OrderBy(x => x.CampTitle).ToList();
+				}
+				if (id == "Referral")
+				{
+					localCAFListItems = localCAFListItems.OrderBy(x => x.CafReference).ToList();
+				}
+			}
+
 			return base.View(localCAFListItems);
 		}
 
@@ -84,6 +100,8 @@ namespace com.rti.tailspinnew.web
 		{
 			List<localCampCAFListItem> localCampCAFListItems = new List<localCampCAFListItem>();
 			localCampCAFListItems = WebSessionManager.getCampCAFList((int)base.Session["usertoken"], (int)base.Session["campcontactAppId"], (int)base.Session["campsiteAppId"]);
+
+			
 			return base.View(localCampCAFListItems);
 		}
 

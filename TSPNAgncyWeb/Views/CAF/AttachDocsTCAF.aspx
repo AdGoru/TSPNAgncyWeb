@@ -81,7 +81,7 @@
                             </td>
                             <td>
                                 <div class="editor-field">
-                                    <%: Html.DropDownList("AttachmentType1", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Camp Registration", text = "Camp Registration" }, new { value = "CBH Authorization", text = "CBH Authorization" },  new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
+                                    <%: Html.DropDownList("AttachmentType1", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Completed Camp Registration", text = "Completed Camper Registration Form" }, new { value = "Authorization Letter", text = "Authorization Letter" },  new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
                                 </div>
                             </td>
                         </tr>
@@ -94,7 +94,7 @@
                             </td>
                             <td class="DatatdLeftnMiddle">
                                 <div class="editor-field">
-                                    <%: Html.DropDownList("AttachmentType2", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" },/* new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" }, */new { value = "Camp Registration", text = "Camp Registration" }, new { value = "CBH Authorization", text = "CBH Authorization" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
+                                    <%: Html.DropDownList("AttachmentType2", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" },/* new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" }, */new { value = "Completed Camp Registration", text = "Completed Camper Registration Form" }, new { value = "Authorization Letter", text = "Authorization Letter" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
                                 </div>
                             </td>
                         </tr>
@@ -107,7 +107,7 @@
                             </td>
                             <td class="DatatdLeftnMiddle">
                                 <div class="editor-field">
-                                    <%: Html.DropDownList("AttachmentType3", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Camp Registration", text = "Camp Registration" }, new { value = "CBH Authorization", text = "CBH Authorization" },  new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
+                                    <%: Html.DropDownList("AttachmentType3", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Completed Camp Registration", text = "Completed Camper Registration Form" }, new { value = "Authorization Letter", text = "Authorization Letter" },  new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
                                 </div>
                             </td>
                         </tr>
@@ -120,11 +120,11 @@
                             </td>
                             <td class="DatatdLeftnMiddle">
                                 <div class="editor-field">
-                                    <%: Html.DropDownList("AttachmentType4", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Camp Registration", text = "Camp Registration" }, new { value = "CBH Authorization", text = "CBH Authorization" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
+                                    <%: Html.DropDownList("AttachmentType4", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Completed Camp Registration", text = "Completed Camper Registration Form" }, new { value = "Authorization Letter", text = "Authorization Letter" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
                                 </div>
                             </td>
                         </tr>
-                        <tr>
+                       <%-- <tr>
                             <td>
                                 <input type="file" name="fileUpload5" id="fileUpload5" />
                             </td>
@@ -133,10 +133,10 @@
                             </td>
                             <td class="DatatdLeftnMiddle">
                                 <div class="editor-field">
-                                    <%: Html.DropDownList("AttachmentType5", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Camp Registration", text = "Camp Registration" }, new { value = "CBH Authorization", text = "CBH Authorization" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
+                                    <%: Html.DropDownList("AttachmentType5", new SelectList(new List<Object> { new { value = 0, text = "Attachment Type" }, new { value = "Application", text = "Application" }, /*new { value = "Camp Brochure/Flyer", text = "Camp Brochure/Flyer" },*/ new { value = "Camp Registration", text = "Camp Registration" }, new { value = "Authorization Letter", text = "Authorization Letter" }, new { value = "Other", text = "Other" } }, "value", "text"), new { style = "width:165px;" })%>
                                 </div>
                             </td>
-                        </tr>
+                        </tr>--%>
                     </table>
                 </td>
             </tr>
@@ -156,4 +156,37 @@
         </table>
     </fieldset>
     <% } %>
+
+    <script >
+
+       
+        $('#fileUpload1').bind('change', function () {
+
+            validateFile(this);
+           
+        });
+        $('#fileUpload2').bind('change', function () {
+
+            validateFile(this);
+
+        });
+        $('#fileUpload3').bind('change', function () {
+
+            validateFile(this);
+
+        });
+        $('#fileUpload4').bind('change', function () {
+
+            validateFile(this);
+
+        });
+
+        function validateFile(obj)
+        {
+            if (obj.files[0].size > 5000000) {
+                alert("Please upload file less than 5MB. Thanks!!");
+                $(obj).val('');
+            }
+        }
+    </script>
 </asp:Content>
