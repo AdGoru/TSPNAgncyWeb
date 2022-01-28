@@ -21,6 +21,9 @@
     CampCAFList
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <%using (Html.BeginForm("CampCAFList", "CAF", FormMethod.Post, new { enctype = "multipart/form-data" }))
       {%>
     <table>
@@ -47,34 +50,37 @@
             <td>            
             <% if (ViewContext.RouteData.Values["Id"] == null || string.IsNullOrEmpty(ViewContext.RouteData.Values["Id"].ToString()) || ViewContext.RouteData.Values["Id"].ToString().ToLower() == "child")
                { %>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
-                    <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                <table class="table">
+                    <thead>
+                    <tr >
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Phone
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
+                        </thead>
+                    <tbody>
                     <% foreach (var item in Model)
                        { %>
                     <tr>
@@ -105,35 +111,40 @@
                         </td>
                     </tr>
                     <% } %>
+
+                        </tbody>
                 </table>
             <% }
                else if (ViewContext.RouteData.Values["Id"] != null && ViewContext.RouteData.Values["Id"].ToString().ToLower()=="camp")
                { %>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
-                    <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                <table  class="table">
+                    <thead>
+                    <tr >
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>                        
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
+                        </thead>
+                    <tbody>
                     <% foreach (var item in Model)
                        { %>
                     <tr>
@@ -162,31 +173,32 @@
                         </td>
                     </tr>
                     <% } %>
+                        </tbody>
                 </table>
             <% }
                else if (ViewContext.RouteData.Values["Id"] != null && ViewContext.RouteData.Values["Id"].ToString().ToLower() == "referral")
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>                        
-                             <th align="left" nowrap="nowrap">
+                             <th>
                             Agency Name
                         </th>                   
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -224,25 +236,25 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>                        
-                          <th align="left" nowrap="nowrap">
+                          <th>
                             Agency Name
                         </th>                      
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -280,26 +292,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -337,26 +349,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -394,26 +406,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                        
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Incomplete On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -450,26 +462,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -507,26 +519,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                        
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -568,22 +580,22 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">Ref No</th>
-                        <th align="left" nowrap="nowrap">Child's Name</th>
-                        <th align="left" nowrap="nowrap">Camp Name</th>
-                        <th align="left" nowrap="nowrap">
+                        <th>Ref No</th>
+                        <th>Child's Name</th>
+                        <th>Camp Name</th>
+                        <th>
                             Camp Phone
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Submitted On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
@@ -621,26 +633,26 @@
                { %>
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grid">
                     <tr align="left">
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Ref No
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Child's Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Camp Name
                         </th>
                         
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Withdrawn On
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agency Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Agent Name
                         </th>
-                        <th align="left" nowrap="nowrap">
+                        <th>
                             Status
                         </th>
                     </tr>
