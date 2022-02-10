@@ -196,7 +196,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="editor-label">Axis I</div>
+                            <div class="editor-label">Primary</div>
                         </td>
                         <td>
                             <div class="editor-field">
@@ -208,7 +208,7 @@
                     <tr>
                         <td>
                             <div class="editor-label">
-                                Axis II
+                                Secondary
                             </div>
                         </td>
                         <td>

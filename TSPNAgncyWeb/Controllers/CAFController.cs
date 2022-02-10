@@ -559,6 +559,7 @@ namespace com.rti.tailspinnew.web
 			}
 			localCampSite _localCamp1 = new localCampSite();
 			List<localCampSiteListItem> campList = WebSessionManager.getCampList((int)base.Session["usertoken"], (int)base.Session["agentAppId"], (int)base.Session["agencyAppId"]);
+			campList = campList.Where(x => x.Status == CAMPSITE_STATE.PARTICIPATING).ToList();
 			num = campList.Count<localCampSiteListItem>();
 			if (base.Session["Camp"] != null)
 			{
@@ -1003,7 +1004,7 @@ namespace com.rti.tailspinnew.web
 						base.ViewData["CafRefNum3"] =  _localCAF.Reference;
 						base.Session["SessionCafRefNum"] = _localCAF.Reference;
 						base.ViewData["CAFStatusT"] =  _localCAF.Status;
-						return base.RedirectToAction("CoverSheet", "Print", new { Id = num, target = "_blank" });
+						return base.RedirectToAction("CAFList", "CAF");
 					}
 					_localCAF = WebSessionManager.getCAFrec((int)base.Session["usertoken"], (int)base.Session["agentAppId"], (int)base.Session["agencyAppId"], num);
 					this.copylocalCAF2Model(ref model, _localCAF);
@@ -1058,7 +1059,7 @@ namespace com.rti.tailspinnew.web
 						base.ViewData["CafRefNum3"] = _localCAF.Reference;
 						base.Session["SessionCafRefNum"] = _localCAF.Reference;
 						base.ViewData["CAFStatusT"] =  _localCAF.Status;
-						return base.RedirectToAction("CoverSheet", "Print", new { Id = id, target = "_blank" });
+						return base.RedirectToAction("CAFList", "CAF");
 					}
 					_localCAF = WebSessionManager.getCAFrec((int)base.Session["usertoken"], (int)base.Session["agentAppId"], (int)base.Session["agencyAppId"], id);
 					this.copylocalCAF2Model(ref model, _localCAF);

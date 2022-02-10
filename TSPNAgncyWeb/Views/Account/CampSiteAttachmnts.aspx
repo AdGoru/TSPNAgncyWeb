@@ -189,7 +189,7 @@
 					$("#ChildLastName").val() == '' ||
 					$("#ChildDOB").val() == '' ||
 					$("#AxisI").val() == '')
-						strval = strval + "<li>Child Info: Firstname, Lastname, DOB, Axis I</li>";
+                        strval = strval + "<li>Child Info: Firstname, Lastname, DOB, Primary</li>";
 					
 					if (
 					$("#ParentFirstName").val() == '' ||
