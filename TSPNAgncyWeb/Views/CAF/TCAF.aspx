@@ -444,7 +444,7 @@
                                                     <tr>
                                                         <td style="width: 105px;">
                                                             <div class="editor-label">
-                                                                Axis I</div>
+                                                                Primary</div>
                                                         </td>
                                                         <td>
                                                             <div class="editor-field">
@@ -454,7 +454,7 @@
                                                     <tr>
                                                         <td style="width: 105px;">
                                                             <div class="editor-label">
-                                                                Axis II
+                                                                Secondary
                                                             </div>
                                                         </td>
                                                         <td>

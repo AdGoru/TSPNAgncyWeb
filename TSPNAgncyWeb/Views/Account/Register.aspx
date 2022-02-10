@@ -39,7 +39,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                           <%-- <tr>
                                 <td class="DatatdLeftnMiddle" width="110px">
                                     <div class="editor-label">
                                         <%: Html.LabelFor(model => model.AgencyProviderID)  %>
@@ -51,7 +51,7 @@
                                         <%: Html.ValidationMessageFor(model => model.AgencyProviderID)  %>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr>--%>
 
                             <!-- need to add Agency department here -->
                             <tr>

@@ -101,7 +101,7 @@
                             </tr>
                             <tr class="Fields">
                                 <td align="left" valign="top">
-                                    <asp:Label ID="Label12" Text="Axis I" runat="server"></asp:Label>
+                                    <asp:Label ID="Label12" Text="Primary" runat="server"></asp:Label>
                                 </td>
                                 <td align="left" class="FieldBorder" width="100%" valign="top">
                                     <asp:Label ID="Label25" Text="" runat="server"></asp:Label>&nbsp;
@@ -109,7 +109,7 @@
                             </tr>
                             <tr class="Fields">
                                 <td align="left" valign="top">
-                                    <asp:Label ID="Label13" Text="Axis II" runat="server"></asp:Label>
+                                    <asp:Label ID="Label13" Text="Secondary" runat="server"></asp:Label>
                                 </td>
                                 <td align="left" class="FieldBorder" width="100%" valign="top">
                                     <asp:Label ID="Label37" Text="" runat="server"></asp:Label>&nbsp;
