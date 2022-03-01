@@ -2104,19 +2104,19 @@ namespace com.rti.tailspinnew.web
 			{
 				From = new MailAddress(str)
 			};
-			mailMessage.To.Add(str2);
-			mailMessage.Bcc.Add(str1);
-			mailMessage.Subject = "SummerCamp login";
-			mailMessage.BodyEncoding = Encoding.UTF8;
-			mailMessage.IsBodyHtml = true;
-			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.Append(string.Concat(userEmail, ", <br/><br/>"));
-			stringBuilder.Append("Please use this temporary password to login to SummerCamp application:<br/><br/>");
-			stringBuilder.Append(string.Concat(strTmpPwd, "<br/><br/>"));
-			stringBuilder.Append("Once you login you will be asked to set your own password.<br/><br/>");
-			stringBuilder.Append("Please click <a href=\"https://scampgwprod.phila.gov/sc/summercamp\">here</a> to access SummerCamp.<br/><br/>");
-			mailMessage.Body = stringBuilder.ToString();
-			smtpClient.Send(mailMessage);
+            mailMessage.To.Add(str2);
+            mailMessage.Bcc.Add(str1);
+            mailMessage.Subject = "[secure] SummerCamp login"; // JHF 2/16/22
+            mailMessage.BodyEncoding = Encoding.UTF8;
+            mailMessage.IsBodyHtml = true;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append(string.Concat(userEmail, ", <br/><br/>"));
+            stringBuilder.Append("Please use this temporary password to login to SummerCamp application:<br/><br/>");
+            stringBuilder.Append(string.Concat(strTmpPwd, "<br/><br/>"));
+            stringBuilder.Append("Once you login you may reset your password.<br/><br/>"); // JHF 2/16/22
+            stringBuilder.Append("Please click <a href=\"https://dbhidsapps1qa.phila.gov/SCagency/SummerCamp/Account/LogOn\">here</a> to access SummerCamp.<br/><br/>");
+            mailMessage.Body = stringBuilder.ToString();
+            smtpClient.Send(mailMessage);
 			return true;
 		}
 

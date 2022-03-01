@@ -88,7 +88,7 @@
                             <%: Truncate(item.CampPhone,20)%>&nbsp;
                         </td>
                         <td>
-                            <%: Truncate(item.SubmittedOn,10)%>&nbsp;
+                            <%: item.SubmittedOn %>&nbsp;
                         </td>
                         <td>
                             <%: Truncate(item.AgentName,25)%>&nbsp;

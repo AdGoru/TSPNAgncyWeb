@@ -559,7 +559,7 @@ namespace com.rti.tailspinnew.web
 			}
 			localCampSite _localCamp1 = new localCampSite();
 			List<localCampSiteListItem> campList = WebSessionManager.getCampList((int)base.Session["usertoken"], (int)base.Session["agentAppId"], (int)base.Session["agencyAppId"]);
-			campList = campList.Where(x => x.Status == CAMPSITE_STATE.PARTICIPATING).ToList();
+			campList = campList.Where(x => x.Status == CAMPSITE_STATE.PARTICIPATING || x.Status == CAMPSITE_STATE.PARTICIPATING_PENDING).ToList();
 			num = campList.Count<localCampSiteListItem>();
 			if (base.Session["Camp"] != null)
 			{
