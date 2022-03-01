@@ -185,14 +185,14 @@
 
             $(".ButtonBar").find('input[type="submit"]').click(function (e) {
 			
-				if($(this).attr('name') == "SaveTcaf"){ 
+                if ($(this).attr('name') == "SaveTcaf" || $(this).attr('name') == "SubmitTcaf"){
 					var strval = "";
 				
 					if ( $("#ChildFirstName").val() == '' ||
 					$("#ChildLastName").val() == '' ||
 					$("#ChildDOB").val() == '' ||
 					$("#AxisI").val() == '')
-						strval = strval + "<li>Child Info: Firstname, Lastname, DOB, Axis I</li>";
+						strval = strval + "<li>Child Info: Firstname, Lastname, DOB, Primary Diagnosis</li>";
 					
 					if (
 					$("#ParentFirstName").val() == '' ||
@@ -444,7 +444,7 @@
                                                     <tr>
                                                         <td style="width: 105px;">
                                                             <div class="editor-label">
-                                                                Primary</div>
+                                                                Primary Diagnosis</div>
                                                         </td>
                                                         <td>
                                                             <div class="editor-field">
@@ -454,7 +454,7 @@
                                                     <tr>
                                                         <td style="width: 105px;">
                                                             <div class="editor-label">
-                                                                Secondary
+                                                                Secondary Diagnosis
                                                             </div>
                                                         </td>
                                                         <td>

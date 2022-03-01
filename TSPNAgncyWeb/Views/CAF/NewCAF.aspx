@@ -196,7 +196,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="editor-label">Primary</div>
+                            <div class="editor-label">Primary Diagnosis</div>
                         </td>
                         <td>
                             <div class="editor-field">
@@ -208,7 +208,7 @@
                     <tr>
                         <td>
                             <div class="editor-label">
-                                Secondary
+                                Secondary Diagnosis
                             </div>
                         </td>
                         <td>
