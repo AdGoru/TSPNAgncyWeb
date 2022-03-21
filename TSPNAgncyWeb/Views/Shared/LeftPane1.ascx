@@ -35,10 +35,10 @@
                     <%:Html.ActionLink("By Referral Source", "CAFList", "CAF", new { id = "Referral" }, null)%></li>
                 <li>
                     <%:Html.ActionLink("All Submissions", "CAFList", "CAF", new { id = "Submissions" }, null)%></li>
-                <li class="heading">
+               <%-- <li class="heading">
                     <%:Html.Label("lblHeading", "Faxes")%></li>
                 <li>
-                    <%:Html.ActionLink("Rejected Faxes", "FaxList","Fax")%></li>
+                    <%:Html.ActionLink("Rejected Faxes", "FaxList","Fax")%></li>--%>
             </ul>
         </div>
     </div>
