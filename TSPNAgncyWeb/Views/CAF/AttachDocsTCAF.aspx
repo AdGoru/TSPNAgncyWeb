@@ -157,7 +157,7 @@
     </fieldset>
     <% } %>
 
-    <script >
+    <script type="text/javascript">
 
        
         $('#fileUpload1').bind('change', function () {
