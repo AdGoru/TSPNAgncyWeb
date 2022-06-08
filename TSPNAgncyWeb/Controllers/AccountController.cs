@@ -2105,7 +2105,7 @@ namespace com.rti.tailspinnew.web
 				From = new MailAddress(str)
 			};
             mailMessage.To.Add(str2);
-            mailMessage.Bcc.Add(str1);
+            // mailMessage.Bcc.Add(str1); JHF 6/8/22
             mailMessage.Subject = "[secure] SummerCamp login"; // JHF 2/16/22
             mailMessage.BodyEncoding = Encoding.UTF8;
             mailMessage.IsBodyHtml = true;

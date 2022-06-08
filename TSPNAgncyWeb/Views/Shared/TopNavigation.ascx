@@ -23,7 +23,7 @@
     }
 %>
 <div class="topmenu" style=" ">
-    <ul id="button" style=" width:960px; background-color:#590033">
+    <ul id="button" style=" width:1260px; background-color:#590033">
         <li>
             <% if (ViewContext.RouteData.Values["Controller"].ToString() == "Home" && ViewContext.RouteData.Values["Action"].ToString() == "PostLoginHome")
                { %>

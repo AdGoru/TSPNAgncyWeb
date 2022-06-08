@@ -43,7 +43,7 @@
                 <table cellpadding="0px" cellspacing="0px" width="960px">
                     <tr valign="top" align="left">
                         <td valign="top" align="right" style="background-color: #9f1f63">
-                            agmgtmp.mstr<img src="../Images/spacer.jpg" alt="TopBanner" style="line-height: 0px; display: inline" />
+                            agmgtmp.mstr<img src="../../Images/spacer.jpg" alt="TopBanner" style="line-height: 0px; display: inline" />
                         </td>
                     </tr>
                     <tr valign="top" align="left">
@@ -57,7 +57,7 @@
                                 </div>
                             </div>
                             <asp:ContentPlaceHolder ID="id1" runat="server">
-                                <img src="../Images/logos.png" alt="TopBanner" style="line-height: 0px; display: inline" />
+                                <img src="../../Images/logos.png" alt="TopBanner" style="line-height: 0px; display: inline" />
                             </asp:ContentPlaceHolder>
                         </td>
                     </tr>

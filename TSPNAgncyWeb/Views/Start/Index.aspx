@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <% using (Html.BeginForm())
        { %>
-    <table cellpadding="0px" cellspacing="0px" width="960px">
+    <table cellpadding="0px" cellspacing="0px" width="1260px">
         <tr>
             <td width="150px" align="left" valign="top" bgcolor="#a6a7aa" style="color: #FFFFFF;
                 padding: 10px" class="LeftPaneHLink" height="450px">
