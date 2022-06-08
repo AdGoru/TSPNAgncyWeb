@@ -189,8 +189,8 @@
                 alert("Please select attachment type and upload.");
                 $(obj).val('');
             }
-            if (obj.files[0].size > 5000000) {
-                alert("Please upload file less than 5MB. Thanks!!");
+            if (obj.files[0].size > 6000000) {
+                alert("Please upload file less than 6MB. Thanks!!");
                 $(obj).val('');
             }
         }
