@@ -157,7 +157,7 @@
     </fieldset>
     <% } %>
 
-    <script type="text/javascript">
+    <script >
 
        
         $('#fileUpload1').bind('change', function () {
@@ -189,8 +189,8 @@
                 alert("Please select attachment type and upload.");
                 $(obj).val('');
             }
-            if (obj.files[0].size > 6000000) {
-                alert("Please upload file less than 6MB. Thanks!!");
+            if (obj.files[0].size > 4000000) {
+                alert("Please upload file less than 4MB. Thanks!!");
                 $(obj).val('');
             }
         }
